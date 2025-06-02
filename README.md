@@ -36,7 +36,10 @@ The Sterimol values (L, B1, B5) for the substituents were calculated by executin
 ```bash
 python Descriptor_calculation/sterimol/calculate_sterimol.py {Path of the folder where the result files (Gaussian.logfile) of structural optimization of substituents are stored.} {Path to CSV file of calculation results}
 ```
-Mulliken chargeを
+Indexes of atoms from which Mulliken charges are extracted and substituent separation for Sterimol calculation of substituents were obtained by entering the necessary information in **tools.yaml** and executing the following command to obtain a CSV file.
+```bash
+python Descriptor_calculation/tools/tools.py
+```
 
 ## Experimental_data
 CSV files of the experimental data used in this study were compiled.
