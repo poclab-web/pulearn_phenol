@@ -19,6 +19,18 @@ In order to create a list of **Reagents Group (RG)** phenols, **Preprocessing_RG
 python Dataset_construction/Preprocessing_RG/Preprocessing_RG.py
 ```
 ## Descriptor_calculation
+MolLogP, MolWt, and Number of heteroatoms were calculated by executing the following commands.
+
+```bash
+python Descriptor_calculation/rdkit_descriptors/calc_rdkit_descriptors.py
+```
+
+The HOMO and Mulliken charge values were extracted from the Gaussian.logfile by entering the necessary information in the corresponding .yaml files and executing the following commands, respectively.
+
+```bash
+python Descriptor_calculation/read_HOMO/read_HOMO.py
+python Descriptor_calculation/read_charges/read_charges.py
+```
 
 ## Experimental_data
 CSV files of the experimental data used in this study were compiled.
