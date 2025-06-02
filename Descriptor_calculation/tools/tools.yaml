@@ -1,0 +1,7 @@
+# Settings for tools.py
+# Name of the file(.txt) containing phenol smiles
+ph_smiles_txt : phenol_smiles_RG.txt
+# Name of the file(.txt) containing biphenol smiles (Enter 'None' for RG)
+bi_smiles_txt : None
+# keyword (SG_BG or RG)
+keyword : RG
