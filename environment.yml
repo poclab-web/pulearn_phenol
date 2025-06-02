@@ -118,5 +118,6 @@ dependencies:
       - rdkit==2024.9.4
       - scikit-learn==1.5.2
       - six==1.16.0
+      - sterimol==1.0
       - tzdata==2025.1
       - xlsxwriter==3.2.2
