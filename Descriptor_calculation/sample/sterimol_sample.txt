@@ -1,0 +1,4 @@
+Referenced Gaussian output file: sample/sterimol
+Calculation results in CSV format: sample/sterimol_sample.csv
+Number of substituents: 3
+

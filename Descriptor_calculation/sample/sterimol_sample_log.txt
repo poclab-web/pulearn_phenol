@@ -1,0 +1,58 @@
+sample/sterimol_sample_log.txt
+
+---
+1. [2H]C
+   Atoms 0 and 1 define the L-axis and direction [ 0.540156  0.858197 -0.409219]
+
+    Atom       Xco/A     Yco/A     Zco/A    VdW/pm
+   ##############################################
+   H          0.540     0.858    -0.409     100.0
+   C          -0.000     0.000     -0.000     150.0
+   H         -1.075     0.149    -0.132     100.0
+   H          0.309    -0.909    -0.524     100.0
+   H          0.226    -0.099     1.065     100.0
+
+   STERIMOL: using cpk van der Waals parameters
+
+    Structure                      L        B1        B5
+   sample/sterimol/1_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.log      2.99      1.52      2.03
+
+---
+2. [2H]OC
+   Atoms 0 and 1 define the L-axis and direction [ 0.384344 -0.889127  0.      ]
+
+    Atom       Xco/A     Yco/A     Zco/A    VdW/pm
+   ##############################################
+   H          1.134    -0.767     0.000     100.0
+   O          0.749     0.122     0.000     135.0
+   C         -0.662    -0.019     0.000     150.0
+   H         -1.037    -0.544     0.893     100.0
+   H         -1.037    -0.544    -0.893     100.0
+   H         -1.079     0.991    -0.000     100.0
+
+   STERIMOL: using cpk van der Waals parameters
+
+    Structure                      L        B1        B5
+   sample/sterimol/2_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.log      3.89      1.28      3.10
+
+---
+3. [2H]CC
+   Atoms 0 and 1 define the L-axis and direction [ 0.399539  0.523389 -0.876457]
+
+    Atom       Xco/A     Yco/A     Zco/A    VdW/pm
+   ##############################################
+   H          1.165     0.523    -0.876     100.0
+   C          0.765     -0.000     0.000     150.0
+   C         -0.765     0.000     -0.000     150.0
+   H          1.165     0.497     0.891     100.0
+   H          1.165    -1.021    -0.015     100.0
+   H         -1.165     1.021     0.015     100.0
+   H         -1.165    -0.497    -0.891     100.0
+   H         -1.165    -0.523     0.876     100.0
+
+   STERIMOL: using cpk van der Waals parameters
+
+    Structure                      L        B1        B5
+   sample/sterimol/3_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.log      4.15      1.56      3.17
+
+---
