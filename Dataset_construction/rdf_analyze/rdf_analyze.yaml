@@ -1,0 +1,5 @@
+# Settings for rdf_analyze.py
+# Name of the folder containing the RDF file
+rdf_folder : RDF_folder
+# Name of the folder where the result Excel file will be saved
+result_folder : output

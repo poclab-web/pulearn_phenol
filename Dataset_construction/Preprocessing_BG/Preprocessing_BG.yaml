@@ -1,0 +1,5 @@
+# Settings for Preprocessing_BG.py
+# Name of the folder containing the SDF file
+sdf_folder : SDF_BG
+# Name of the folder where the result Excel file will be saved
+result_folder : output

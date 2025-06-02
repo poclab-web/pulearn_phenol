@@ -1,0 +1,5 @@
+# Settings for Preprocessing_SG.py
+# Name of the Excel file output by rdf_analyze.py
+after_rdf_analyze_file : after_rdf_analyze.xlsx
+# Name of the folder where the result Excel file will be saved
+result_folder : output
