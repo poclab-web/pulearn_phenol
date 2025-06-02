@@ -1,0 +1,11 @@
+%Mem=16GB
+%Nprocshared=10
+%oldchk=3_#_m062x_6-311G_d_p_geom_allcheck_guess_read.chk
+%chk=3_#_mp2_6-31G_d_geom_allcheck_guess_read.chk
+# mp2/6-31G(d) geom=allcheck guess=read
+
+Smiles:Cc1ccccc1O
+
+0 1
+
+
