@@ -8,6 +8,12 @@ python Dataset_construction/rdf_analyze/rdf_analyze.py
 python Dataset_construction/Preprocessing_SG/Preprocessing_SG.py
 ```
 
+In order to create a list of **Biological Group (BG)** phenols, **Preprocessing_BG.py** was run on each SDF file in the **SDF_BG**.  Results were summarized in **phenol_BG.xlsx** . The **Preprocessing_BG.py** file was executed by entering the necessary information in **Preprocessing_BG.yaml** and then executing the following command.
+
+```bash
+python Dataset_construction/Preprocessing_BG/Preprocessing_BG.py
+```
+
 ## Descriptor_calculation
 
 ## Experimental_data
