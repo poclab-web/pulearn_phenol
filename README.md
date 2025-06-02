@@ -32,6 +32,12 @@ python Descriptor_calculation/read_HOMO/read_HOMO.py
 python Descriptor_calculation/read_charges/read_charges.py
 ```
 
+The Sterimol values (L, B1, B5) for the substituents were calculated by executing the following commands
+```bash
+python Descriptor_calculation/sterimol/calculate_sterimol.py {Path of the folder where the result files (Gaussian.logfile) of structural optimization of substituents are stored.} {Path to CSV file of calculation results}
+```
+Mulliken chargeを
+
 ## Experimental_data
 CSV files of the experimental data used in this study were compiled.
 ## PU_learning
