@@ -1,0 +1,11 @@
+%Mem=16GB
+%Nprocshared=10
+%oldchk=3_#_opt_pm6_MMFF.chk
+%chk=3_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.chk
+# opt freq b3lyp/6-31G(d) geom=allcheck guess=read
+
+Smiles:[2H]CC
+
+0 1
+
+
