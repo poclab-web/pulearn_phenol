@@ -1,0 +1,16 @@
+# Settings of read_HOMO.py
+
+# Path of the folder where the Gaussian log file is saved
+folder: "../sample/charges_HOMO"
+
+# Name of the Gaussian log file for freq calculation
+# Replace the number in the file name with *
+file1: "*_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.log"
+
+# Name of the Gaussian log file for single point calculation
+# Replace the number in the file name with *
+file2: "*_#_m062x_6-311G_d_p_geom_allcheck_guess_read.log"
+
+# Destination path
+# The file extension must be .csv
+csv: "../sample/HOMO_sample.csv"

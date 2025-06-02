@@ -1,0 +1,19 @@
+# Settings of read_charges.py
+
+# Path of the folder where the Gaussian log file is saved
+folder: "../sample/charges_HOMO"
+
+# Name of the Gaussian log file for freq calculation
+# Replace the number in the file name with *
+file1: "*_#_opt_freq_b3lyp_6-31G_d_geom_allcheck_guess_read.log"
+
+# Name of the Gaussian log file for single point calculation
+# Replace the number in the file name with *
+file2: "*_#_mp2_6-31G_d_geom_allcheck_guess_read.log"
+
+# Name of the get_indexes_***.csv by tools.py
+file3: "get_indexes_sample.csv"
+
+# Destination path
+# The file extension must be .csv
+csv: "../sample/charges_sample.csv"
