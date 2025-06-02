@@ -7,7 +7,7 @@ In order to create a list of **Synthesized Group (SG)** phenols, **rdf_analyze.p
 python Dataset_construction/rdf_analyze/rdf_analyze.py
 python Dataset_construction/Preprocessing_SG/Preprocessing_SG.py
 ```
-python 
+
 ## Descriptor_calculation
 
 ## Experimental_data
