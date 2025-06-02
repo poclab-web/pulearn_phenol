@@ -14,6 +14,10 @@ In order to create a list of **Biological Group (BG)** phenols, **Preprocessing_
 python Dataset_construction/Preprocessing_BG/Preprocessing_BG.py
 ```
 
+In order to create a list of **Reagents Group (RG)** phenols, **Preprocessing_RG.py** was run on each SDF file in the **SDF_RG**.  Results were summarized in **phenol_RG.csv** . The **Preprocessing_RG.py** file was executed by entering the necessary information in **Preprocessing_RG.yaml** and then executing the following command. **SDF_RG** could not be uploaded to this repository because the folder was too large.
+```bash
+python Dataset_construction/Preprocessing_RG/Preprocessing_RG.py
+```
 ## Descriptor_calculation
 
 ## Experimental_data
