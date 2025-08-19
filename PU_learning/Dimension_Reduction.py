@@ -2,8 +2,9 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import umap
+from sklearn.manifold import TSNE
 
-def pca(df_data, n, whiten=True, fn1= 'Dimension_reduction/PCA_results.csv.', fn2 = 'Dimension_reduction/PCA_correlation.csv'):
+def pca(df_data, n, whiten=True, fn1= 'Dimension_reduction/PCA_results', fn2 = 'Dimension_reduction/PCA_correlation'):
     """
     The function to perform Principal Component Analysis (PCA) on given data.
 
@@ -39,7 +40,7 @@ def pca(df_data, n, whiten=True, fn1= 'Dimension_reduction/PCA_results.csv.', fn
 
     return df, pc_corr, ratio
 
-def UMAP(df_data, n, n_neighbors=15, min_dist=0.1, metric='euclidean', fn = 'Dimension_reduction/UMAP_results.csv'):
+def UMAP(df_data, n, n_neighbors=15, min_dist=0.1, metric='euclidean', fn = 'Dimension_reduction/UMAP_results'):
     """
     The function to perform Uniform Manifold Approximation and Projection (UMAP) on given data.
 
@@ -59,6 +60,31 @@ def UMAP(df_data, n, n_neighbors=15, min_dist=0.1, metric='euclidean', fn = 'Dim
     embedding = reducer.fit_transform(df_data)
     new_df = pd.DataFrame(embedding)
     new_df.columns = [f'UMAP{i+1}' for i in new_df.columns]
+    new_df.index = df_data.index
+
+    df = pd.concat([df_data, new_df], axis=1)
+    df.to_csv(f'{fn}.csv')
+
+    return df
+
+def tSNE(df_data, n, perplexity=30.0, fn = 'Dimension_reduction/tSNE_results'):
+    """
+    The function to perform t-distributed stochastic neighbor embedding (t-SNE) on given data.
+
+    Args:
+        df_data (pandas.DataFrame): Data to be used.
+        n (int): Number of new axes.
+        perplexity (float): Parameter of t-SNE. Defaults to 30.0.
+        fn (str): Path of the CSV file summarizing the results. Defaults to 'Dimension_reduction/tSNE_results.csv'.
+
+    Returns:
+        pandas.DataFrame: DataFrame summarizing the results.
+    """
+
+    reducer = TSNE(n_components=n, perplexity=perplexity, random_state=0)
+    embedding = reducer.fit_transform(df_data)
+    new_df = pd.DataFrame(embedding)
+    new_df.columns = [f'tSNE{i+1}' for i in new_df.columns]
     new_df.index = df_data.index
 
     df = pd.concat([df_data, new_df], axis=1)

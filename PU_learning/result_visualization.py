@@ -44,9 +44,9 @@ def dps_distribution(dps, y0_d, y0_t, y1_t, title):
     ax[1].hist(dps, bins=np.arange(0, 1.0+0.1, 0.1), color="#03af7a", edgecolor="k", linewidth=0.2)
     fig.subplots_adjust(hspace=0.0)
     ax[1].set_ylim(0, y1_t)
-    ax[1].set_yticks([0, 500, 1000])
+    ax[1].set_yticks([x for x in range(0, y1_t) if x % 500 == 0])
     ax[0].set_ylim(y0_d, y0_t)
-    ax[0].set_yticks([2500, 3000, 3500])
+    ax[0].set_yticks([x for x in range(y0_d, y0_t) if x % 500 == 0])
     ax[1].spines['top'].set_visible(False)
     ax[0].spines['bottom'].set_visible(False)
     
